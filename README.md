@@ -22,8 +22,8 @@ When ready, refresh the registration of the resource provider:
 **az provider register --namespace Microsoft.ContainerService**
 
 To provision:
-1. Clone the kube_private repo. and issue:
-   1. cd kube_private
+1. Clone the private_kube repo. and issue:
+   1. cd private_kube
    1. terraform init
    1. terraform apply
 (will be prompted for a project name. must be alphanumeric)
