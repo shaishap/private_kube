@@ -17,7 +17,8 @@ Enable Run command preview feature: (one time per subscription) – takes a few 
 
 It takes few minutes for status to show Registered. Can verify status by running:
 **az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/RunCommandPreview')].{Name:name,State:properties.state}"**
- 
+![Image of CLI](https://github.com/shaishap/private_kube/blob/main/regimage.png?raw=true)
+
 When ready, refresh the registration of the resource provider:
 **az provider register --namespace Microsoft.ContainerService**
 
