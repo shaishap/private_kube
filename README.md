@@ -22,7 +22,7 @@ It takes few minutes for status to show Registered. Can verify status by running
 When ready, refresh the registration of the resource provider:
 **az provider register --namespace Microsoft.ContainerService**
 
-To provision:
+**To provision:**
 1. Clone the private_kube repo. and issue:
    1. cd private_kube
    1. terraform init
