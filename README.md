@@ -1,5 +1,7 @@
 # private_kube
 
+This project is designed to address a need to depoy an instance of a private kubernetes cluster, with a complementing private registry cluster, using terraform.
+
 **Prerequisites and one-time setups**
 * All configuration is set against westeurope (hard-coded), as it is the closest DC. 
 * Initial storage account was created manually. It did not include infrastructure encryption. For improved security, it’s better to include it, and using either Microsoft managed keys, or a private key from a customer managed key vault. It can be included in the deployment, and managed on a per project level.
@@ -22,7 +24,7 @@ It takes few minutes for status to show Registered. Can verify status by running
 When ready, refresh the registration of the resource provider:
 **az provider register --namespace Microsoft.ContainerService**
 
-**To provision:**
+**To provision a private instance:**
 1. Clone the private_kube repo. and issue:
    1. cd private_kube
    1. terraform init
