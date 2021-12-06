@@ -1,0 +1,3 @@
+language: c
+script: gcc -o hello.exe hello.c
+after_success: ./hello.exe
